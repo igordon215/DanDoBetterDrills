@@ -8,7 +8,7 @@ public class StringUtilities {
      * @return `Hello World` as a string
      */
     public static String getHelloWorld() {
-        return null;
+        return "Hello World";
     }
 
     /**
@@ -17,7 +17,9 @@ public class StringUtilities {
      * @return the concatenation of two strings, `firstSegment`, and `secondSegment`
      */
     public static String concatenation(String firstSegment, String secondSegment){
-        return null;
+        String a = firstSegment;
+        String b = secondSegment;
+        return a + b;
     }
 
     /**
@@ -26,7 +28,8 @@ public class StringUtilities {
      * @return the concatenation of an integer, `firstSegment`, and a String, `secondSegment`
      */
     public static String concatenation(int firstSegment, String secondSegment){
-        return null;
+        int c = firstSegment;
+        return c + secondSegment;
     }
 
     /**
@@ -34,7 +37,11 @@ public class StringUtilities {
      * @return the first 3 characters of `input`
      */
     public static String getPrefix(String input){
-        return null;
+        if (input.length() >=3) {
+             return input.substring(0,3);
+            } else {
+            return input;
+            }
     }
 
     /**
@@ -42,7 +49,11 @@ public class StringUtilities {
      * @return the last 3 characters of `input`
      */
     public static String getSuffix(String input){
-        return null;
+        if (input.length() >= 3){
+            return input.substring(2);
+        }else{
+            return input;
+        }
     }
 
     /**
@@ -51,7 +62,8 @@ public class StringUtilities {
      * @return the equivalence of two strings, `inputValue` and `comparableValue`
      */
     public static Boolean compareTwoStrings(String inputValue, String comparableValue){
-        return null;
+        boolean areEqual = inputValue.equals(comparableValue);
+        return areEqual;
     }
 
     /**
